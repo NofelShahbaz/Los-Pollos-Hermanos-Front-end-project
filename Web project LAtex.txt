@@ -1,0 +1,355 @@
+\documentclass[a4paper, 12pt, english]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{indentfirst}
+\usepackage{verbatim}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{relsize}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{xparse}
+\NewDocumentCommand{\myrule}{O{1pt} O{2pt} O{black}}{%
+  \par\nobreak
+  \kern\the\prevdepth
+  \kern#2
+  {\color{#3}\hrule height #1 width\hsize}
+  \kern#2
+  \nointerlineskip
+}
+\usepackage[section]{placeins}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\newcommand{\myrowcolour}{\rowcolor[gray]{0.925}}
+\usepackage[obeyspaces]{url}
+\usepackage{etoolbox}
+\usepackage[colorlinks,citecolor=black,urlcolor=blue]{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, inner=3cm, outer=3cm, top=2cm, bottom=2cm}
+
+\begin{document}
+
+% TITLE PAGE
+\begin{titlepage}
+\begin{center}
+\textbf{\LARGE Bahria University }\\[0.5cm]
+\textbf{\large Department of Computer Science}\\[0.2cm]
+\vspace{20pt}
+\includegraphics[width=0.8\textwidth]{BUIC-logo.png}\\[1cm]
+
+\textbf{\Large Web Systems and Technologies}\\
+\vspace{15pt}
+\myrule[1pt][7pt]
+\textbf{\LARGE  Project Report}\\
+\vspace{15pt}
+\textbf{\large Los Pollos Hermanos Fiesta Online Restaurant}\\
+\myrule[1pt][7pt]
+\vspace{25pt}
+\textbf{\large Student Name \hspace{20pt} Student ID}\\
+Nofel Shahbaz and Malik Huzaifa Awais \hspace{45pt} 01-135231-078/01-135231-046 \\
+
+\vspace{45pt}
+\textbf {\large Lecturer in charge:}\\[0.2cm]
+\Large {Sir Adnan Jelani}\\[0.1cm]
+\end{center}
+
+\vfill
+\begin{center}
+\textbf{Submission Date : 12/05/2025}\\
+\end{center}
+\end{titlepage}
+
+% TABLE OF CONTENTS
+\newpage
+\tableofcontents
+\newpage
+
+% INTRODUCTION
+\section{Introduction}
+The Los Pollos Hermanos Fiesta Online Restaurant project represents an innovative approach to integrating technology with the food service industry...\lipsum[1-3]
+\newpage
+
+% PROBLEM STATEMENT
+\section{Problem Statement}
+Traditional food ordering systems suffer from inefficiencies, limited accessibility, and poor user engagement...\lipsum[4]
+\newpage
+
+% OBJECTIVES
+\section{Objectives}
+\begin{itemize}
+\item Provide a seamless online food ordering experience
+\item Implement real-time tracking and secure payments
+\item Enable restaurants to manage orders efficiently
+\end{itemize}
+\lipsum[28]
+\newpage
+
+% STAKEHOLDER ANALYSIS
+\section{Stakeholder Analysis}
+\begin{itemize}
+\item \textbf{Customers:} Seek convenience and quality service
+\item \textbf{Restaurant Owners:} Aim for better order management
+\item \textbf{Delivery Staff:} Require routing and schedule clarity
+\item \textbf{Admin:} Oversees the entire platform
+\end{itemize}
+\lipsum[5-6]
+\newpage
+
+% SOFTWARE REQUIREMENTS SPECIFICATION (SRS)
+\section{Previous Software Requirement Specification (SRS)}
+\textbf{Project Title:} Los Pollos Hermanos Fiesta Online Restaurant\\
+\textbf{Overview:} The Online Food Delivery System is designed...\lipsum[7-8]
+\newpage
+
+% FUNCTIONAL REQUIREMENTS
+\section{Functional Requirements}
+\begin{itemize}
+\item Secure user authentication
+\item Dynamic restaurant listings
+\item Order placement and tracking
+\item Integrated payment gateways
+\item Admin dashboard
+\item Customer reviews
+\item Promotions management
+\item Support chat
+\end{itemize}
+\lipsum[29-30]
+\newpage
+
+% TECHNICAL REQUIREMENTS
+\section{Technical Requirements}
+\begin{itemize}
+\item Frontend: HTML, CSS, JavaScript, React.js
+\item Backend: ASP.NET with C#
+\item Database: Microsoft SQL Server
+\item APIs: Google Maps, Stripe/PayPal
+\end{itemize}
+\lipsum[31-32]
+\newpage
+
+% FRONT-END STRUCTURE
+\section{Front-End Structure and Features}
+\newpage
+\subsection{User Interface Design}
+\lipsum[9-10]
+\newpage
+\subsection{Navigation and User Flow}
+\lipsum[10-11]
+\newpage
+\subsection{Interactive Elements}
+\lipsum[11-12]
+\newpage
+\subsection{Consistency in Design}
+\lipsum[12-13]
+\newpage
+\subsection{Basic Functionality}
+\lipsum[13-14]
+\newpage
+
+% BACKEND ARCHITECTURE
+\section{Backend Architecture}
+\lipsum[14-15]
+\newpage
+
+% SCALABILITY CONSIDERATIONS
+\section{Scalability Considerations}
+\lipsum[33-34]
+\newpage
+
+% DEPLOYMENT STRATEGY
+\section{Deployment Strategy}
+\lipsum[35-36]
+\newpage
+
+% MAINTENANCE PLAN
+\section{Maintenance and Support Plan}
+\lipsum[37-38]
+\newpage
+
+% SCREENSHOTS
+\section{Screenshots of Key Pages}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{homepage.jpg}
+\caption{Homepage showing restaurant listings}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{Login.jpg}
+\caption{Login Description}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{Order.jpg}
+\caption{Order customization and cart interface}
+\end{figure}
+
+\newpage
+
+% CHALLENGES
+\section{Challenges Faced and Solutions}
+\begin{itemize}
+\item \textbf{State Management:} Solved using Context API
+\item \textbf{Responsive Design:} Bootstrap grid and media queries
+\item \textbf{Validation:} Real-time form checks
+\item \textbf{Routing:} React Router and fallback routes
+\end{itemize}
+\lipsum[16-17]
+\newpage
+
+% DEVIATIONS
+\section{Deviations from Original Proposal}
+\lipsum[18-19]
+\newpage
+
+% SECURITY
+\section{Security Considerations}
+\lipsum[20-21]
+\newpage
+
+% TESTING
+\section{Testing and Evaluation}
+\lipsum[22-23]
+\newpage
+
+% PERFORMANCE BENCHMARKS
+\section{Performance Benchmarks}
+\lipsum[39-40]
+\newpage
+
+% USER FEEDBACK AND IMPROVEMENTS
+\section{User Feedback and Improvements}
+\lipsum[41-42]
+\newpage
+
+% FUTURE WORK
+\section{Future Work}
+\lipsum[24-25]
+
+\newpage
+\section{Market Analysis and Competitor Review}
+\lipsum[43-45]
+
+\newpage
+\section{Technology Stack Justification}
+Explain why you chose ASP.NET, React.js, and SQL Server over other alternatives. Include comparisons with PHP, Node.js, MySQL, etc.
+\lipsum[46-47]
+
+\newpage
+\section{Use Case Scenarios}
+Provide 2–3 detailed use case examples such as:
+\begin{itemize}
+  \item Placing a custom order with dietary restrictions
+  \item Admin banning a fraudulent user
+  \item Driver accepting a delivery
+\end{itemize}
+\lipsum[48-49]
+
+\newpage
+\section{User Roles and Permissions}
+\begin{itemize}
+  \item Customer: Can browse, order, and review.
+  \item Admin: Can manage users, restaurants, and transactions.
+  \item Staff: View and process incoming orders.
+\end{itemize}
+\lipsum[50-51]
+
+\newpage
+\section{Risk Management}
+\begin{itemize}
+  \item Data Breach
+  \item System Downtime
+  \item Payment Failures
+\end{itemize}
+Include mitigation strategies like data encryption, backup plans, etc.
+\lipsum[52-53]
+
+\newpage
+\section{Project Timeline and Gantt Chart}
+Describe your development phases (Planning, Design, Development, Testing, Deployment) and optionally include a Gantt chart image.
+\lipsum[54-55]
+
+\newpage
+\section{Code Snippets and Explanations}
+Add meaningful backend (ASP.NET C#) and frontend (React.js) code excerpts. For example:
+\begin{verbatim}
+[HttpPost]
+public IActionResult PlaceOrder(OrderModel order)
+{
+    if (ModelState.IsValid) {
+        _context.Orders.Add(order);
+        _context.SaveChanges();
+        return Ok();
+    }
+    return BadRequest();
+}
+\end{verbatim}
+\lipsum[56-57]
+
+\newpage
+\section{API Integration Details}
+Explain integration with:
+\begin{itemize}
+  \item Google Maps for location services
+  \item Stripe for payments
+  \item Firebase or Twilio for notifications
+\end{itemize}
+\lipsum[58-59]
+
+\newpage
+\section{Accessibility and UI/UX Considerations}
+Talk about screen reader support, color contrast, font size choices, mobile responsiveness, etc.
+\lipsum[60-61]
+\newpage
+% ACCESSIBILITY AND INCLUSIVITY
+\section{Accessibility and Inclusivity Considerations}
+Designing an inclusive and accessible platform was a key priority in this project. The following measures were implemented to ensure usability for a diverse user base:
+\begin{itemize}
+    \item Compliance with Web Content Accessibility Guidelines (WCAG) 2.1 standards
+    \item Support for screen readers and semantic HTML markup
+    \item Keyboard-friendly navigation and tab indexing
+    \item High-contrast themes and font resizing options
+    \item Alt text on images for visually impaired users
+    \item Multilingual support for broader audience access
+\end{itemize}
+\lipsum[43]
+
+\newpage
+
+% ENVIRONMENTAL AND SOCIAL IMPACT
+\section{Environmental and Social Impact}
+The Los Pollos Hermanos Fiesta Online Restaurant system contributes positively to environmental sustainability and social welfare:
+\begin{itemize}
+    \item Promotes digital menus and receipts to reduce paper waste
+    \item Enables optimized delivery routing to reduce carbon emissions
+    \item Empowers local food vendors by providing a broader reach
+    \item Encourages ethical data handling and privacy practices
+    \item Supports community building by integrating feedback loops
+\end{itemize}
+\lipsum[44]
+
+\newpage
+
+% CONCLUSION
+\section{Conclusion}
+\lipsum[26-27]
+\newpage
+
+% REFERENCES
+\section{References}
+\begin{itemize}
+\item https://reactjs.org
+\item https://docs.microsoft.com/en-us/aspnet/core/
+\item https://getbootstrap.com/
+\item https://stripe.com/docs
+\end{itemize}
+
+\end{document}
+
+
